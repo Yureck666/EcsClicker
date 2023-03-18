@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be7b7dd223348f4846373b21bbd8dfe, type: 3}
+  m_Name: BusinessConfig1
+  m_EditorClassIdentifier: 
+  businessPrefab: {fileID: 1120631668883623426, guid: 920660c2fcdb681408193b6a39e1b03f, type: 3}
+  startLevel: 1
+  name: Bus1
+  basicIncome: 3
+  cost: 3
+  incomeDelay: 3
+  upgrades:
+  - {fileID: 11400000, guid: 16761a27916d53944ab43989e24412ca, type: 2}
+  - {fileID: 11400000, guid: b0584c543bd934c488024d4ace730ef4, type: 2}
