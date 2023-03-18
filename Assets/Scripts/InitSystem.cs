@@ -93,7 +93,7 @@ namespace ClickerTest
 				businessObject.SetEntity(businessEntity);
 				businessObject.Init(
 					businessData,
-					() => LevelUp(businessData),
+					() => LevelUp(businessObject),
 					(mp, cost, disableAction) => AddUpgrade(businessEntity, mp, cost, disableAction));
 
 				_businesses[i] = businessObject;
@@ -127,10 +127,10 @@ namespace ClickerTest
 			_storageObject = PersistentStorage.PersistentStorage.Load<StorageObject, StorageObject.GameData>(new StorageObject());
 		}
 
-		private void LevelUp(BusinessScriptable data)
+		private void LevelUp(Business data)
 		{
 			var entity = data.Entity;
-			var cost = (GetCurrentLevel(entity) + 1) * data.Cost;
+			var cost = (GetCurrentLevel(entity) + 1) * data.BasicCost;
 			CheckMoneyAndInvoke(() =>
 			{
 				var timerPool = _world.GetPool<TimerComponent>();

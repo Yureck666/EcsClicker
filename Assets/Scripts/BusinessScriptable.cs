@@ -20,12 +20,5 @@ namespace ClickerTest
 		public uint Cost => cost;
 		public float IncomeDelay => incomeDelay;
 		public UpgradeScriptable[] Upgrades => upgrades;
-
-		public int Entity { get; private set; }
-
-		public void SetEntity(int value)
-		{
-			Entity = value;
-		}
 	}
 }

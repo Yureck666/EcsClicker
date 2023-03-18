@@ -18,6 +18,7 @@ namespace ClickerTest
 
 		public Slider Slider => slider;
 		public uint BasicCost { get; private set; }
+		public float IncomeDelay { get; private set; }
 		public int Entity { get; private set; }
 
 		public void SetEntity(int value)
@@ -67,6 +68,7 @@ namespace ClickerTest
 		public void Init(BusinessScriptable config, Action levelUp, Action<float, uint, Action> upgradeAction)
 		{
 			BasicCost = config.Cost;
+			IncomeDelay = config.IncomeDelay;
 			SetLevel(0);
 			name.text = config.Name;
 			levelUpButton.onClick.AddListener(levelUp.Invoke);
