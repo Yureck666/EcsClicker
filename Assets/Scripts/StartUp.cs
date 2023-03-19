@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using ClickerTest.Components;
 using ClickerTest.Systems;
 using Leopotam.EcsLite;
-using TMPro;
 using UnityEngine;
 
 namespace ClickerTest
